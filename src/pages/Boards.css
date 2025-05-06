@@ -1,0 +1,113 @@
+.boards {
+  padding: 2rem;
+}
+
+.boards h1 {
+  color: #06202B;
+  margin-bottom: 2rem;
+}
+
+.boards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.board-card {
+  background-color: #F5EEDD;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  transition: all 0.2s;
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.board-header h3 {
+  color: #06202B;
+  margin: 0;
+  text-align: left;
+  flex: 1;
+}
+
+.delete-board-btn {
+  background: none;
+  border: none;
+  color: #06202B;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.delete-board-btn:hover {
+  opacity: 1;
+}
+
+.board-info {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.board-date {
+  display: block;
+}
+
+.view-board-btn {
+  background-color: #7AE2CF;
+  color: #06202B;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+
+.view-board-btn:hover {
+  background-color: #077A7D;
+  color: #F5EEDD;
+}
+
+.add-board-card {
+  background-color: #F5EEDD;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 150px;
+}
+
+.add-board-card:hover {
+  background-color: #e6dcc9;
+}
+
+.add-board-btn {
+  background-color: transparent;
+  color: #06202B;
+  border: 2px dashed #06202B;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.add-board-btn:hover {
+  background-color: #06202B;
+  color: #F5EEDD;
+} 

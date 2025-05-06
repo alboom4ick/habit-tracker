@@ -1,0 +1,271 @@
+.history-stats-timeline {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
+}
+
+.history-stats {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stats-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #F5EEDD;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  color: #06202B;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.history-timeline {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+}
+
+.timeline-date-group {
+  margin-bottom: 1.5rem;
+}
+
+.timeline-date {
+  color: #077A7D;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-goals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-goal-item {
+  background: #F5EEDD;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.timeline-goal-title {
+  color: #06202B;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.timeline-goal-status {
+  color: #7AE2CF;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-goal-reflection {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.timeline-empty {
+  color: #999;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.calendar-container {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-top: 1rem;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-header button {
+  background-color: #F5EEDD;
+  border: none;
+  font-size: 1.5rem;
+  color: #077A7D;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.calendar-header button:hover {
+  background-color: #7AE2CF;
+  color: #06202B;
+}
+
+.calendar-header h2 {
+  color: #06202B;
+  font-size: 1.5rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.75rem;
+  background: #F5EEDD;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.weekday {
+  text-align: center;
+  font-weight: 600;
+  color: #077A7D;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #7AE2CF;
+  background: transparent;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s, background 0.2s;
+  position: relative;
+  border: 1.5px solid #f0f0f0;
+}
+
+.calendar-day:not(.empty):hover {
+  box-shadow: 0 4px 12px rgba(122,226,207,0.15);
+  background: #eafff7;
+  z-index: 2;
+}
+
+.calendar-day.today {
+  border: 2px solid #077A7D;
+  background: linear-gradient(120deg, #eafff7 60%, #7AE2CF 100%);
+  box-shadow: 0 2px 8px rgba(7,122,125,0.08);
+}
+
+.day-number {
+  font-size: 1.1rem;
+  color: #077A7D;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.calendar-goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.calendar-goal-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.97rem;
+  color: #06202B;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 6px;
+  padding: 0.15rem 0.5rem 0.15rem 0.25rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.calendar-goal-item input[type="checkbox"] {
+  accent-color: #7AE2CF;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.calendar-goal-checked {
+  text-decoration: line-through;
+  color: #7AE2CF;
+  font-weight: 500;
+}
+
+.calendar-goal-item input[type="checkbox"]:checked + .calendar-goal-checked,
+.calendar-goal-item .calendar-goal-checked {
+  background: #eafff7;
+}
+
+.calendar-goal-item:hover {
+  background: #f0f9f7;
+}
+
+.calendar-goal-empty {
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.calendar-goal-streak {
+  background: #fffbe6;
+  color: #FF8A65;
+  font-size: 0.68rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.01rem 0.18rem;
+  margin-left: 0.18rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.08rem;
+  box-shadow: 0 1px 2px rgba(255,138,101,0.08);
+  letter-spacing: 0.1px;
+  line-height: 1.05;
+}
+
+/* Custom scrollbar for calendar */
+.calendar-container::-webkit-scrollbar,
+.calendar-grid::-webkit-scrollbar {
+  width: 8px;
+}
+.calendar-container::-webkit-scrollbar-thumb,
+.calendar-grid::-webkit-scrollbar-thumb {
+  background: #7AE2CF;
+  border-radius: 4px;
+}
+.calendar-container::-webkit-scrollbar-track,
+.calendar-grid::-webkit-scrollbar-track {
+  background: #F5EEDD;
+  border-radius: 4px;
+}

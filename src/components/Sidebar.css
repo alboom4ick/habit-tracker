@@ -1,0 +1,120 @@
+.sidebar {
+  background-color: #06202B;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  color: #F5EEDD;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.logo-text.hidden {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.shrink-button {
+  background-color: transparent;
+  color: #F5EEDD;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.shrink-button:hover {
+  background-color: #077A7D;
+}
+
+.shrink-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.shrink-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.nav-button {
+  background-color: transparent;
+  color: #F5EEDD;
+  border: none;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  text-decoration: none;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-text {
+  transition: opacity 0.2s ease;
+}
+
+.nav-text.hidden {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.nav-button:hover {
+  background-color: #077A7D;
+  color: #F5EEDD;
+}
+
+.nav-button.active {
+  background-color: #7AE2CF;
+  color: #06202B;
+} 

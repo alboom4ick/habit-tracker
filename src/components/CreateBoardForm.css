@@ -1,0 +1,60 @@
+.create-form-card {
+  background-color: #F5EEDD;
+}
+
+.create-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.create-form-card input {
+  padding: 0.75rem;
+  border: 2px solid #7AE2CF;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background-color: white;
+  width: 100%;
+}
+
+.create-form-card input:focus {
+  border-color: #077A7D;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.create-btn, .cancel-btn {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+}
+
+.create-btn {
+  background-color: #7AE2CF;
+  color: #06202B;
+  border: none;
+}
+
+.create-btn:hover {
+  background-color: #077A7D;
+  color: #F5EEDD;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: #06202B;
+  border: 1px solid #ddd;
+}
+
+.cancel-btn:hover {
+  background-color: #f5f5f5;
+} 
